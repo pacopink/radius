@@ -1,0 +1,30 @@
+###################################################################
+# -*- text -*-
+#
+# dictionary.ruckus
+#
+# place the following line into the "dictionary" file of your
+# FreeRadius installation
+# $INCLUDE dictionary.ruckus
+#
+# For use with FreeRadius and ZoneDirector
+#
+# rm, 02.11.2012
+#
+# Vendor-ID: 25053
+#
+VENDOR Ruckus 25053
+BEGIN-VENDOR Ruckus
+# Value Format: group_attr1,group_attr2,...
+ATTRIBUTE Ruckus-User-Groups 1 string
+ATTRIBUTE Ruckus-Sta-RSSI 2 integer
+ATTRIBUTE Ruckus-SSID 3 string
+ATTRIBUTE Ruckus-WlanID 4 integer
+ATTRIBUTE Ruckus-Location 5 string
+ATTRIBUTE Ruckus-Grace-Period 6 integer
+ATTRIBUTE Ruckus-SCG-CBlade-IP 7 integer
+ATTRIBUTE Ruckus-SCG-DBlade-IP 8 integer
+ATTRIBUTE Ruckus-Session-Type 125 integer
+ATTRIBUTE Ruckus-Acct-Status 126 integer
+END-VENDOR Ruckus
+###################################################################

@@ -1,0 +1,1 @@
+python -m cProfile -o tsp.pyprof ../modules/acct_processor.py -ln ACCP_A01 -p -dictpath ../dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log $*

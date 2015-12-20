@@ -1,0 +1,59 @@
+%common 
+log_file=/radius/log/proc_monitor.log
+hostname=RHEL6U4
+max_processes=400
+
+%proc_1
+proc_name=dipc_relay
+inst_name=
+command_line=dipc_relay -conf dipc_relay.conf 
+
+%proc_2
+proc_name=snmp_msg_collector
+inst_name=
+command_line=snmp_msg_collector -conf log_config.conf 
+
+%proc_3
+proc_name=kpi_collector_py
+inst_name=KPI_COLLECTOR
+command_line=kpi_collector_py -ln KPI_COLLECTOR -i 5 -logpath /radius/log -outpath /radius/kpi -d
+
+%proc_4
+proc_name=radius_transport
+inst_name=RS_AUTH_A01
+command_line=radius_transport -t AUTT -addr 192.168.237.131 -port 1812 -conf dummy.conf -ln RS_AUTH_A01 -logpath /radius/log -d
+
+%proc_5
+proc_name=radius_transport
+inst_name=RS_ACCT_A01
+command_line=radius_transport -t ACCT -addr 192.168.237.131 -port 1813 -conf dummy.conf -ln RS_ACCT_A01 -logpath /radius/log -d
+
+%proc_6
+proc_name=auth_processor
+inst_name=AUTH_A001
+command_line=auth_processor -ln AUTH_A001 -dictpath /radius/dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
+
+%proc_7
+proc_name=auth_processor
+inst_name=AUTH_A002
+command_line=auth_processor -ln AUTH_A002 -dictpath /radius/dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
+
+%proc_8
+proc_name=acct_processor
+inst_name=ACCT_A001
+command_line=acct_processor -ln ACCT_A001 -dictpath /radius/dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
+
+%proc_9
+proc_name=acct_processor
+inst_name=ACCT_A002
+command_line=acct_processor -ln ACCT_A002 -dictpath /radius/dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
+
+%proc_10
+proc_name=radius_disconn
+inst_name=DISCONN_A001
+command_line=radius_disconn -ln DISCONN_A001 -addr 192.168.237.131 -dictpath /radius/dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
+
+%proc_11
+proc_name=radius_mirror
+inst_name=MIRROR_A001
+command_line=radius_mirror -ln MIRROR_A001 -logpath /radius/log -d

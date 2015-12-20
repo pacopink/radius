@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gz02/!svn/ver/152172/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/libs
+END
+libACE.so.6.2.0
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/gz02/!svn/ver/152172/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/libs/libACE.so.6.2.0
+END
+libACEXML.so.6.2.0
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/gz02/!svn/ver/152172/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/libs/libACEXML.so.6.2.0
+END
+libACEXML_Parser.so.6.2.0
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/gz02/!svn/ver/152172/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/libs/libACEXML_Parser.so.6.2.0
+END

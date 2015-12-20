@@ -1,0 +1,3 @@
+%common
+snmp_log_path=/radius/log
+snmp_temp_path=/radius/log

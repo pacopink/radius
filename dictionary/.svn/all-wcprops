@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/gz02/!svn/ver/152099/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/dictionary
+END
+dictionary.ruckus
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/gz02/!svn/ver/150823/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/dictionary/dictionary.ruckus
+END
+dictionary.wispr
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/gz02/!svn/ver/150823/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/dictionary/dictionary.wispr
+END
+radius_dictionary
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/gz02/!svn/ver/152099/projects/ericsson/ctm-bus-wifi/Source/trunk/ctm-radius2/dictionary/radius_dictionary
+END
