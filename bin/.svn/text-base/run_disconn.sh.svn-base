@@ -1,1 +1,0 @@
-radius_disconn -ln DISCONN_A01 -addr 192.168.237.131 -p -dictpath ../dictionary -dictfile radius_dictionary -dictfile dictionary.wispr -dictfile dictionary.ruckus -cdr /radius/cdr -logpath /radius/log -d
